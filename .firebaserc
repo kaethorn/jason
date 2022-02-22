@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "jason-39851"
+  },
+  "targets": {
+    "jason-39851": {
+      "hosting": {
+        "jason": [
+          "pretty-jason"
+        ]
+      }
+    }
+  }
+}
