@@ -1,0 +1,13 @@
+<form>
+  <mat-form-field appearance="fill">
+    <mat-label>Ugly JSON</mat-label>
+    <textarea matInput [formControl]="uglyJson" placeholder="{ paste your ugly JSON here }"></textarea>
+  </mat-form-field>
+  <mat-chip-list class="mat-chip-list-stacked">
+    <mat-chip *ngFor="let error of errors" selected color="warn">{{ error }}</mat-chip>
+  </mat-chip-list>
+  <mat-form-field appearance="fill">
+    <mat-label>Pretty JSON</mat-label>
+    <textarea matInput [formControl]="prettyJson" readonly placeholder="{ Only pretty stuff here }"></textarea>
+  </mat-form-field>
+</form>
